@@ -11,6 +11,16 @@ I have successfully analyzed the provided React component code and identified **
 3. **`refactored-solution.js`** - Working JavaScript implementation with performance demo
 4. **`refactored-wallet-optimized.tsx`** - Complete TypeScript React solution
 
+## How to Run:
+
+To see the performance demonstration and comparison between original and refactored code:
+
+```bash
+node refactored-solution.js
+```
+
+This will run both implementations and show the performance improvements achieved.
+
 ## Key Issues Identified:
 
 ### 🔴 **Critical Performance Issues:**
