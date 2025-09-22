@@ -21,7 +21,8 @@ const SwapForm: React.FC = () => {
         setTimeout(() => {
             setLoading(false);
             setError('');
-            alert(`Swapped ${amount} ${fromToken?.currency} to ${amount * exchangeRate} ${toToken?.currency}`);
+            const rate = fromToken && toToken ? fromToken.price / toToken.price : 1;
+            alert(`Swapped ${amount} ${fromToken?.currency} to ${(amount * rate).toFixed(4)} ${toToken?.currency}`);
         }, 2000);
     };
 
