@@ -63,6 +63,40 @@ For development with auto-reload:
 npm run dev
 ```
 
+## Testing
+
+The project includes a comprehensive test client that demonstrates all API functionality.
+
+### Running Tests
+
+1. **Start the server** (in one terminal):
+```bash
+npm run dev
+```
+
+2. **Run the test client** (in another terminal):
+```bash
+npm test
+# or
+npm run test:api
+```
+
+3. **Run tests with automatic delay** (waits for server to start):
+```bash
+npm run test:wait
+```
+
+### Test Coverage
+
+The test client (`src/test-client.ts`) includes:
+- ✅ Creating books with realistic data
+- ✅ Retrieving all books with pagination
+- ✅ Filtering books by author, genre, and title
+- ✅ Getting individual books by ID
+- ✅ Updating book information
+- ✅ Deleting books
+- ✅ Error handling and validation testing
+
 ## Usage
 
 The server will start on port 3000 (or the port specified in the PORT environment variable).
